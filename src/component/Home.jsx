@@ -5,66 +5,91 @@ import Productcategory from "../Products/Productcategory";
 import { Allproduct } from "../Products/Allproduct";
 import Carousel from "./Carousel";
 import { Mycontext } from "../Context/Context";
-import "./Home.css"
+import "./Home.css";
 // import Navbar from "./Navbar";
 function Home() {
   const { serchTerm } = useContext(Mycontext);
   return (
     <>
-     <Navbar/>
-    
-      <div  style={{ backgroundColor: "black" }}>
+      <Navbar />
+
+      <div style={{ backgroundColor: "black" }}>
         {!serchTerm ? (
           <>
-           
-          
             <Carousel />
             {/* <Allproduct /> */}
-           
-            <Productcategory/>
-           <div>
-             <img className="ms-4" style={{}} src="https://cdn.dribbble.com/users/1997192/screenshots/17509443/media/7ad0ad0a124cf1731c736845487916d4.png?resize=400x0" alt="" />
-             <img style={{height:'300px'}} src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/mobile_Def_baby_strollers_&_carriers_250823.webp" alt="" />
-             <img style={{height:'300px',width:'450px'}} src="https://sep.turbifycdn.com/ty/cdn/albee-baby/homepage-mobile-blackfriday-oct24.png" alt="" />
 
-
-             </div>
-             <Allproduct />
+            <Productcategory />
+            <div>
+              <img
+                className="ms-4"
+                style={{}}
+                src="https://cdn.dribbble.com/users/1997192/screenshots/17509443/media/7ad0ad0a124cf1731c736845487916d4.png?resize=400x0"
+                alt=""
+              />
+              <img
+                style={{ height: "300px" }}
+                src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/mobile_Def_baby_strollers_&_carriers_250823.webp"
+                alt=""
+              />
+              <img
+                style={{ height: "300px", width: "450px" }}
+                src="https://sep.turbifycdn.com/ty/cdn/albee-baby/homepage-mobile-blackfriday-oct24.png"
+                alt=""
+              />
+            </div>
+            <Allproduct />
+            <div>
+              <img
+                className="ms-5 me-4"
+                style={{ height: "300px", width: "350px" }}
+                src="             https://i.pinimg.com/474x/44/16/7c/44167ce1064d886897cbd4ea734fa555.jpg
+"
+                alt=""
+              />
+              <img
+                className="ms-5 me-4"
+                style={{ height: "300px", width: "320px" }}
+                src="https://i.pinimg.com/474x/f6/3a/bb/f63abb9115c72fda90cf40790bd4b6a4.jpg"
+                alt=""
+              />
+              <img
+                className="ms-5"
+                style={{ height: "300px", width: "320px" }}
+                src="https://i.pinimg.com/564x/ba/cb/14/bacb14330a25fac3832126ff8942f084.jpg"
+                alt=""
+              />
+            </div>
             <div className="ms-5">
-  {/* <img
+              {/* <img
     className="baby img-fluid"  // Added img-fluid class for responsiveness
     style={{maxHeight:'100vh',width:'100%' }}  // Changed height to maxHeight and set width to 100%
     src="https://media.istockphoto.com/id/450417281/photo/newborn-baby-lying-in-daddys-hand.jpg?s=612x612&w=0&k=20&c=jpmGM9_2sdobHN3LckoaqboCuE1t2qmrgPXd0-VySaw="
     alt=""
   /> */}
-</div>
-
-            
+            </div>
           </>
         ) : (
           <>
             <Allproduct />
-            <Productcategory/>
-            
+            <Productcategory />
           </>
         )}
-      
-      {/* <Productcategory/> */}
 
-      <div class="container">
-  {/* <img
+        {/* <Productcategory/> */}
+
+        <div class="container">
+          {/* <img
     decoding="async"
     class="img-fluid"
     alt=""
     loading="lazy"
     src="https://cdn.pixelbin.io/v2/black-bread-289bfa/XUefL6/wrkr/original/catalog/brandstore/Mothercare/333-2023_08_01-MC_WebBanner_AW23_1920x650_28.07.23_With_Logo_100.jpg"
   /> */}
-</div>
+        </div>
+      </div>
 
-            </div>
-
-      
-{/* <       div style={{backgroundColor:'black	'}}>
+      {/* <       div style={{backgroundColor:'black	'}}>
 
         <h1 style={{color:'#2E8B57	',fontSize:'20px'}}>Bₐby ₚᵣₒdᵤcₜₛ ₒₙₗᵢₙₑ:</h1>
       <p style={{fontSize:'10px' ,color:'white'}}>

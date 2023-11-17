@@ -23,7 +23,7 @@ return(
               return serchTerm.toLowerCase() === " " ? item : item.name.toLowerCase().includes(serchTerm);
             }).map((babypro, i) => (
               <div className="col" key={i}>
-                <div className="card shadow-sm h-100" style={{backgroundColor:'#DCDCDC	'}}>
+                <div className="card shadow-sm h-100" style={{backgroundColor:'black	'}}>
                   <div className="d-flex justify-content-between p-3">
                     <div
                       id="animated-div"
@@ -47,14 +47,14 @@ return(
 
                   <div className="card-body">
                     <div className="d-flex justify-content-center">
-                      <h2 style={{color:'	'}} className="small">{babypro.name}</h2>
+                      <h2 style={{color:'	white'}} className="small">{babypro.name}</h2>
                       <p style={{color:'red'}}>
                         <s >₹{babypro.price2}</s>
                       </p>
                     </div>
 
                     <div  className="mb-3">
-                      <h5   className="text-dark mb-0" >₹{babypro.price}</h5>
+                      <h5   className="text-warning mb-0 " >₹{babypro.price}</h5>
                     </div>
 
                     <Button
